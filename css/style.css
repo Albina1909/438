@@ -1,0 +1,470 @@
+/***** ОБЩИЕ СТИЛИ (начало) *****/
+html {
+    font-size: 17px;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: normal;
+    color: #041032;
+
+    background-color: #f4f6fb;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    line-height: 150%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    font-weight: bold;
+    color: #4050a5;
+
+    transition: all 0.25s;
+}
+
+a:hover {
+    color: #ef5e42;
+    text-decoration: none;
+}
+
+.btn {
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    padding: 18px 48px;
+
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffffff;
+    
+    border-radius: 30px;
+    background-color: #ef5e42;
+}
+
+.btn:hover {
+    color: #ffffff;
+    background-color: #ef8042;
+}
+
+.btn:active {
+    color: #ffffff;
+    background-color: #b54029;
+}
+
+.btn::before {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    content: "";
+
+    border: 2px solid #041032;
+    border-radius: 30px;
+
+    transform: rotate(-3deg);
+    transition: all 0.5s;
+}
+
+.btn:hover::before {
+    transform: rotate(3deg);
+}
+
+.btn:active::before {
+    transform: rotate(0);
+}
+
+.btn-circle {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 12px;
+
+    width: 60px;
+    height: 60px;
+
+    border-radius: 100%;
+    background-color: #ef5e42;
+
+    transition: all 0.25s;
+}
+
+.btn-circle:hover {
+    cursor: pointer;
+    background-color: #ef8042;
+}
+
+.btn-circle:active {
+    background-color: #b54029;
+}
+
+.btn-circle-play,
+.btn-circle-plus {
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn-circle-play {
+    background-color: #88caff;
+    background-image: url("../img/icon-play.svg");
+}
+
+.btn-circle-play:hover {
+    background-color: #a7d5fb;
+}
+
+.btn-circle-play:active {
+    background-color: #31a1fd;
+}
+
+.btn-circle-plus {
+    background-image: url("../img/icon-plus.svg");
+}
+
+.btn-circle::before {
+    box-sizing: border-box;
+    position: absolute;
+    top: 3px;
+    left: -7px;
+
+    width: 73px;
+    height: 56px;
+
+    content: "";
+
+    border: 2px solid #041032;
+    border-radius: 100%;
+
+    transform: rotate(10deg);
+
+    transition: all 0.5s;
+}
+
+.btn-circle:hover::before {
+    transform: rotate(-180deg);
+}
+
+.btn-circle:active::before {
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    left: 0;
+}
+
+.title {
+    font-size: 42px;
+    font-weight: bold;
+}
+/***** ОБЩИЕ СТИЛИ (конец) *****/
+
+/***** HEADER (начало) *****/
+header {
+    padding: 30px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav {
+    width: 740px;
+}
+
+.main-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-menu a:not(.btn) {
+    font-size: 20px;
+}
+
+.burger-menu button {
+    width: 30px;
+    height: 20px;
+
+    border: none;
+    background-color: transparent;
+    background-image: url("../img/icon-burger.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/***** HEADER (конец) *****/
+
+/***** Секция PROMO (начало) *****/
+.promo {
+    box-sizing: border-box;
+    height: 627px;
+    padding: 55px 0;
+
+    background-image: url("../img/promo/bg-promo.svg");
+    background-repeat: repeat-x;
+    background-position: 0 bottom;
+}
+
+.promo article {
+    position: relative;
+}
+
+.promo-content {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 390px;
+}
+
+.promo-content .title {
+    max-width: 391px;
+    letter-spacing: -0.2px;
+}
+
+.promo-content strong {
+    color: #ef5e42;
+}
+
+.promo-content p {
+    font-size: 20px;
+}
+
+.promo-content .btn-play {
+    margin-left: 22px;
+
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #041032;
+}
+
+.promo-content .btn-play:hover {
+    color: #ef5e42;
+}
+
+.promo .promo-img {
+    position: absolute;
+}
+/***** Секция PROMO (конец) *****/
+
+/***** Секция COMPANIES (начало) *****/
+.companies {
+    margin-top: -50px;
+    padding: 80px 0;
+    background-color: #ffffff;
+}
+
+.companies .container {
+    flex-direction: column;
+}
+
+.companies .title {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.companies .companies-list {
+    justify-content: space-between;
+}
+/***** Секция COMPANIES (конец) *****/
+
+/***** Секция STEPS (начало) *****/
+.steps {
+    padding: 90px 0;
+}
+
+.steps .container {
+    justify-content: center;
+}
+
+.steps-content {
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.steps-content > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 370px;
+    min-height: 320px;
+}
+
+.steps-header .title {
+    margin-bottom: 25px;
+
+    line-height: 150%;
+    text-align: center;
+}
+
+.steps-header .btn::after {
+    position: absolute;
+    top: -35px;
+    left: -25px;
+
+    width: 130%;
+    height: 110px;
+
+    content: "";
+
+    background-image: url("../img/btn_bg.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 110px;
+}
+
+.steps-item img {
+    height: 136px;
+}
+
+.steps-item h3 {
+    margin: 22px 0;
+    font-size: 24px;
+}
+
+.steps-item p {
+    text-align: center;
+}
+/***** Секция STEPS (конец) *****/
+
+
+@media(min-width: 1300px) {
+    .container {
+        max-width: 1290px;
+    }
+
+    .promo-img {
+        max-width: 1100px;
+        top: -36px;
+        left: 27%;
+    }
+}
+
+@media(max-width: 1299px) {
+    .logo {
+        max-width: 125px;
+    }
+
+    .btn {
+        padding-left: 31px;
+        padding-right: 28px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+        font-size: 15px;
+    }
+
+    .promo-img {
+        max-width: 684px !important;
+        left: 35%;
+    }
+
+    .steps .title {
+        font-size: 32px;
+    }
+}
+
+@media(max-width: 991px) {
+    .main-menu {
+        justify-content: flex-end;
+    }
+
+     .promo {
+        padding-top: 0;
+        background-image: none;
+    }
+
+    .promo-content {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .promo-content .title,
+    .promo-content p {
+        text-align: center;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+
+    .promo-content .title {
+        min-width: 276px;
+        max-width: 642px;
+    }
+
+    .promo-img {
+        position: relative !important;
+        top: 0 !important;
+        left: 0 !important;
+    }
+
+    .companies {
+        margin-top: 75px;
+    }
+}
+
+@media(max-width: 767px) {
+    header {
+        padding-bottom: 0;
+    }
+
+    .promo {
+        padding-top: 30px;
+    }
+}
+
+@media(max-width: 479px) {
+    .logo {
+        max-width: 72px;
+        margin-right: 10px;
+    }
+
+    .btn {
+        margin-right: 16px;
+
+        padding-left: 20px;
+        padding-right: 18px;
+        padding-top: 12px;
+        padding-bottom: 14px;
+
+        font-size: 13px;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+
+    .promo-content .title {        
+        max-width: 276px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .buttons .btn {
+        margin-bottom: 20px;
+    }
+    .companies {
+        margin-top: 0;
+    }
+}

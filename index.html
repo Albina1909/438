@@ -6,20 +6,129 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap</title>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
-    
-<link rel="stylesheet" href="css/style.css">
+    <!-- Подключение Bootstrap-стилей -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
+    <!-- Подключение собственных стилей -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
- 
-    
+<header>
+    <div class="container">
+        <div class="row">
+            <a class ="col-lg-2" href="#">
+                <img src="img/logo.svg" alt="PromoVideoLab" class="logo">
+            </a>
+            <nav>
+                <ul class="main-menu">
+                    <li><a href="#">Types of videos</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a class="btn" href="#">schedule a call</a></li>
+                    <li class="burger-menu"><button></button></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
 
+    <main>
+        <!-- Секция PROMO (начало) -->
+        <section class="promo">
+            <div class="container">
+                <article class="row">
+                    <div class="col-12 col-lg-5 promo-content">
+                        <h1 class="title">Animated explainer <strong>video production</strong> for businesses around the
+                            world!</h1>
+                        <p>Stand out from competitors, elevate your brand and improve conversions with a 90-second
+                            corporate video!
+                        </p>
+                        <div class="row buttons">
+                            <a class="btn" href="#">Request a Quote</a>
+                            <a class="btn-play" href="#"><span class="btn-circle btn-circle-play"></span>play video</a>
+                        </div>
+                    </div>
+                    <img class="col-12 col-lg-7 promo-img" src="img/promo/promo-img.svg"
+                        alt="Animated explainer video production for businesses around the world!">
+                </article>
+            </div>
+        </section>
+        <!-- Секция PROMO (конец) -->
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
-    
+        <!-- Секция COMPANIES (начало) -->
+        <section class="companies">
+            <div class="container">
+                <h2 class="title">Trusted by 1,500+ companies like…</h2>
+                <ul class="row companies-list">
+                    <li class="col-6 col-sm-4 col-lg-2"><img src="img/companies/visa.svg" alt="Visa"></li>
+                    <li class="col-6 col-sm-4 col-lg-2"><img src="img/companies/intel.svg" alt="Intel"></li>
+                    <li class="col-6 col-sm-4 col-lg-2"><img src="img/companies/drinks.svg" alt="Drinks"></li>
+                    <li class="col-6 col-sm-4 col-lg-2"><img src="img/companies/coinsource.svg" alt="CoinSource"></li>
+                    <li class="col-6 col-sm-4 col-lg-2"><img src="img/companies/porter-davis.svg" alt="Porter Davis">
+                    </li>
+                    <li class="col-6 col-sm-4 col-lg-2"><img src="img/companies/netsuite.svg" alt="Netsuite"></li>
+                </ul>
+            </div>
+        </section>
+        <!-- Секция COMPANIES (конец) -->
+
+        <!-- Секция STEPS (начало) -->
+        <section class="steps">
+            <div class="container">
+                <div class="row steps-content">
+                    <div class="col-12 col-md-6 col-lg-4 steps-header">
+                        <h2 class="title">People LOOOVE explainer videos because they</h2>
+                        <a class="btn" href="#">schedule a call</a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 steps-item">
+                        <img src="img/steps/step-1.svg" alt="QUICK 20 MINUTE CALL">
+                        <h3>QUICK 20 MINUTE CALL</h3>
+                        <p>Schedule a Free Call with our explainer video company to find out what works best for your
+                            business
+                            and why.</p>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 steps-item">
+                        <img src="img/steps/step-2.svg" alt="CREATIVE BRIEF">
+                        <h3>CREATIVE BRIEF</h3>
+                        <p>Fill out a short questionnaire to let us learn more about you and your target audience</p>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 steps-item">
+                        <img src="img/steps/step-3.svg" alt="STORYBOARD">
+                        <h3>STORYBOARD</h3>
+                        <p>Check out a series of graphical thumbnails, which illustrate the breakdown of the video and
+                            tell us
+                            your thoughts about
+                            it.</p>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 steps-item">
+                        <img src="img/steps/step-4.svg" alt="SCRIPT & VOICE-OVER">
+                        <h3>SCRIPT & VOICE-OVER</h3>
+                        <p>Confirm the script, written by our scriptwriters and choose the voice-over talent from our
+                            list</p>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 steps-item">
+                        <img src="img/steps/step-5.svg" alt="FINAL DELIVERY">
+                        <h3>FINAL DELIVERY</h3>
+                        <p>Receive your completed explainer video in HD format (1080p) and get free tips on how to Rock
+                            Your
+                            Audience!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Секция STEPS (конец) -->
+
+    </main>
+
+    <!-- Подключение библиотеки jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+    <!-- Подключение библиотеки popper -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Подключение скрипта Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
 </body>
+
 </html>
