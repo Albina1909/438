@@ -1,12 +1,30 @@
+// ТИПЫ ДАННЫХ
+
+// ПРИМИТИВНЫЕ
+// string "текст"
+// number числа 1 2 3
+// boolean правда/ложь
+// СЛОЖНЫЕ
+// Object ==> массивы, объекты,функции
+// typeof
+//   циклы: for, while , do- while (condition) {
+//   методы: allert (всплывающее окошко), prompt (спросить можно вбивать какие-то данные), confirm(задать вопрос нельзя вбивать да или нет)
+
+// итерация-это шаг
+let mas = [];
+for (let i=0; num =0, i < 10 ; i ++, num++) {
+  if (num % 2 == 0) { mas[i] = num;}
+ else{mas [i] =0 ;
+  continue;}
+    
+console.log(`${i + 1}. ${mas[i]} `);}
 // let num = 100 ; // 100=1*2*2*4
 // let num = `ff`;
 // console.log(parseInt(num, 24));
 
-let num = 100
-let str = "100"
-if (num ===str) { console.log ("Переменные равны")};
-
-
+// let num = 100
+// let str = "100"
+// if (num ===str) { console.log ("Переменные равны")};
 
 // // Мини-калькулятор
 // // сложение 2-х чисел
