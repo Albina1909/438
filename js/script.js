@@ -1,3 +1,70 @@
+
+let assocMas = new Map([
+  ["number", 1000],
+  ["city", "Москва"],
+  ["flag", true],
+]);
+
+assocMas.set("date", "28.04.2021"); // создать элемент и значение с ключем "date"
+
+console.log(assocMas.get("date")); // вернуть значение по ключу "date"
+console.log (assocMas.size); //длина массива
+assocMas.delete("number"); // удалить элемент и значение с ключем "date"
+
+
+console.log(assocMas);
+
+
+
+
+// let matrix = [
+
+//   [100, 200, 300],
+//   ["Москва", "Красноярск", "Волгоргад", "Питер"],
+
+//   [true, false]];
+
+// for (let i in matrix) {
+//   if (i == 1) {
+//     // 1-ый способ
+//     for (let j in matrix[1]) { console.log(`${j + 1}. ${matrix[1][j]}`); }
+
+//     // 2- ой способ
+//     // for(let j = 0; j< matrix[1].length; j++)
+//     //    { console.log(`${j + 1}. ${matrix[i] [j]}`);}}
+//   }
+// }
+
+
+
+
+
+// /      МЕТОДЫ РАБОТЫ С МАССИВОМ:
+// // 1 Push добавить эл - ты в конце массива,
+// // 2 unshift добавить эл - ты в начале массива,
+// // 3 pop удалять последнего эл - та из массива,
+// // 4 shift удалять 1 - го эл - та из массива,
+// // 5 slice копия массива полная 
+// //               без параметров
+// //               копия документа выбирает элементы с 0-го до номера или кроме последних двух
+// // 6 splice  удаляет элементы
+
+// let mas = [100, 200, 300, 400, 500];
+// // let copiMas = mas; ссылка на объект (массив)
+
+// let copiMas = mas.slice(0. - 3);  // копия массива (новый массив)
+// console.log(`${i + 1}. ${mas[i]} `);
+
+// for (let i = 0; i < mas.length; i++) {
+//   console.log(`${i + 1}. ${mas[i]}`);
+// }
+// console.log("******");
+// for (let i in mas) {
+//   console.log(`${i + 1}. ${mas[i]}`);
+// }
+
+
+
 // ТИПЫ ДАННЫХ
 
 // ПРИМИТИВНЫЕ
@@ -11,13 +78,13 @@
 //   методы: allert (всплывающее окошко), prompt (спросить можно вбивать какие-то данные), confirm(задать вопрос нельзя вбивать да или нет)
 
 // итерация-это шаг
-let mas = [];
-for (let i=0; num =0, i < 10 ; i ++, num++) {
-  if (num % 2 == 0) { mas[i] = num;}
- else{mas [i] =0 ;
-  continue;}
+// let mas = [];
+// for (let i=0; num =0, i < 10 ; i ++, num++) {
+//   if (num % 2 == 0) { mas[i] = num;}
+//  else{mas [i] =0 ;
+//   continue;}
     
-console.log(`${i + 1}. ${mas[i]} `);}
+// console.log(`${i + 1}. ${mas[i]} `);}
 // let num = 100 ; // 100=1*2*2*4
 // let num = `ff`;
 // console.log(parseInt(num, 24));
